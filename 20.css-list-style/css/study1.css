@@ -1,0 +1,47 @@
+/* .none {
+  list-style: none;
+}
+
+.disc {
+  list-style: disc;
+}
+
+.circle {
+  list-style: circle;
+}
+
+.square {
+  list-style: square;
+}
+
+.upperA {
+  list-style: upper-alpha;
+}
+
+영문 알파벳(대문자)으로 순서에 따라 매겨짐
+
+.lowerA {
+  list-style: lower-alpha;
+}
+
+영문 알파벳(소문자)로 순서에 따라 매겨짐
+
+.upperR {
+  list-style: upper-roman;
+}
+
+로마자 대문자
+
+.lowerR {
+  list-style: lower-roman;
+}
+
+로마자 소문자 */
+
+.in {
+  list-style: upper-roman;
+}
+
+.out {
+  list-style: lower-alpha;
+}

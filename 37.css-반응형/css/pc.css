@@ -1,0 +1,8 @@
+@media (min-width:1024px) {
+
+  /* 화면의 너비가 최소 1024px 이상인 경우 적용될 스타일 */
+  .frame {
+    background: red;
+  }
+
+}

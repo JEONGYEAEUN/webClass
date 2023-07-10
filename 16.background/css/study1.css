@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+  padding: 40px;
+  border: 1px solid brown;
+  /* background-color: antiquewhite;
+  background-image: url(../img/squirrel.jpg);
+  background-repeat: no-repeat;
+  background-position: 100px 100px; */
+  background: antiquewhite url(../img/squirrel.jpg) no-repeat 100px 100px
+}
+
+.box2 {
+  width: 1000px;
+  height: 800px;
+  border: 1px solid blue;
+  margin: 0 auto;
+  /* background: chocolate url(../img/squirrel.jpg) no-repeat left bottom; */
+  background: chocolate url(../img/squirrel.jpg) no-repeat calc(100% - 100px) calc(100% - 50px);
+
+}
+
+.box2>h2 {
+  border: 1px solid whitesmoke;
+  width: calc(50% + 50px);
+}
+
+.box3 {
+  width: 800px;
+  height: 800px;
+  border: 1px solid black;
+  margin: 0 auto;
+  background: url(../img/squirrel.jpg) no-repeat 0 0;
+  background-size: auto 100%;
+
+}
+
+.box4 {
+  border: 10px solid orange;
+  height: 100vh;
+  /* background-image: url(../img/squirrel.jpg),url(../img/squirrel.jpg);
+  background-repeat: no-repeat,no-repeat;
+  background-position: 0 0,100% 100%; */
+  background: url(../img/squirrel.jpg) no-repeat 0 0, url(../img/squirrel.jpg) no-repeat 100% 100%;
+  /* 배경은 콤마(,)를 통해서 두개이상 넣어줄 수 있다 */
+}
+
+.box5 {
+  border: 10px solid burlywood;
+  width: 30vw;
+  height: 30vw;
+  margin: 0 auto;
+  background-image: linear-gradient(0deg, beige, chocolate, orange);
+  /* background-position: 100px 100px;
+  background-repeat: repeat;
+  background-size: 100px 100px; */
+  background-image: radial-gradient(beige, chocolate, orange);
+}
+
+.box6 {
+  width: 100%;
+  height: 500px;
+  border: 10px solid rgb(65, 48, 0);
+  margin: 0 auto;
+  /* background-color: rgb(151, 96, 8); */
+  background-image: linear-gradient(45deg, chocolate, black), url(../img/squirrel.jpg);
+  background-blend-mode: difference;
+  background-attachment: fixed;
+}

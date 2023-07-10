@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  width: 700px;
+  background: pink;
+  margin: 0 auto;
+  border: 5px solid grey;
+}
+
+.a {
+  width: 200px;
+  height: 200px;
+  background: palevioletred;
+  float: left;
+
+}
+
+.b {
+  width: 200px;
+  height: 200px;
+  background: rgb(245, 162, 245);
+  float: left;
+
+}
+
+.c {
+  width: 200px;
+  height: 200px;
+  background: lavenderblush;
+  float: left;
+
+}
+
+/* .clear {
+  clear: both;
+  background: lime;
+} */
+
+.parent:after {
+  content: "";
+  display: block;
+  /* after는 태생이 인라인이라 바꿔주는 작업이 필요하다 */
+  clear: both;
+
+}
+
+.nextP {
+  border: 5px solid purple;
+}

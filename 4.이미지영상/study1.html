@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지태그 비디오태그</title>
+</head>
+
+<body>
+  <h1>이미지태그</h1>
+  <p>이미지지 파일을 연결해서 홈페이지에 보여주는 역할을 하는 태그</p>
+  <p>src속성에 이미지파일까지의 경로를 입력하여 작성한다.</p>
+  <p>alt속성에는 이미지를 설명할 수 있는 대체텍스트를 제공해야 한다</p>
+  <p>이 대체텍스트는 시각장애인들의 컴퓨터의 설치되어있는 리더기프로그램이 읽어주는 내용이기 때문이다</p>
+  <p>모든 사람들이 자신의 환경에 구애받지않고 동등하게 홈페이지를 사용할 수 있어야 한다는 웹접근성을 지키기 위해서는 alt를 입력해야 한다</p>
+  <p>연결할 수 있는 이미지파일의 형태는 일반적인 이미지라면 대부분 가능하다(jpg,png,gif,svg)</p>
+  <p>이미지태그는 일반적인 텍스트 글자와 같은 컨텐츠로 취급된다. 우리가 글자를 읽고 해석한 뒤 제목이라는 문맥 혹은 설명이라는 문맥으로 결정하듯이 이미지도 전체적인 맥락안에서 제먹 또는 설명컨텐츠로 구분될 수
+    있다</p>
+
+  <img src="./img/blossoms.jpg" alt="매화사진">
+  <!-- src와 alt는 이미지 속성에 필수로 들어가야하는 속성들 -->
+  <h1><a href="https://www.naver.com/"><img src="./img/naver.jpg" alt="네이버로고"></a></h1>
+  <hr>
+  <h1>비디오태그</h1>
+  <p>비디오파일을 연결해서 화면에 보여주는 태그</p>
+  <p>비디오파일은 브라우저와 아직 호환성이 완벽하지 않기 때문에 mp4파일은 거의 모든 브라우저에 호환이 가능하여 브라우저에서 볼 수 있지만 다른 형태의 파일은 브라우저에서 호환되지 않는 경우가 많다</p>
+  <p>비디오태그의 마침태그가 있는 이유는 자식태그로 source태그를 구성하여 여러가지 형태의 비디오 타입을 수용할 수 있게 하기 위해서이다</p>
+  <p>비디오 태그는 자식태그 source태그를 위에서 아래로 탐색해나가면서 해당하는 브라우저와 호환되는 영상이라면 바로 플레이한다</p>
+  <!-- 두가지 방법 -->
+  <video src="./vid/blossoms.mp4" controls autoplay muted loop poster="이미지의 상대경로"></video>
+  <p>일반적인 방법, 브라우저는 mp4타입은 일반적으로 지원하기 때문에 이를 사용한다 </p>
+  <br>
+  <video controls>
+    <source src="./vid/video.webm" type="video/webm">
+    <source src="./vid/video.mp4" type="video/mp4">
+    <p>브라우저의 호환성을 위해 사용하는 방법</p>
+    <!-- 소스태그는 브라우저 호환성을 위헤 넣고싶은만큼 추가할 수 있다 -->
+  </video>
+  <hr>
+  <h1>유튜브영상 홈페이지에 사용하기</h1>
+  <p>유튜브에 들어가 영상에 우클릭>소스코드 복사하기>작업창에 붙여넣기 </p>
+  <iframe width="835" height="470" src="https://www.youtube.com/embed/sAIKBhouAKs" title="짱구 음식 모음 : 16기 [무비키친]"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+
+
+</body>
+
+</html>

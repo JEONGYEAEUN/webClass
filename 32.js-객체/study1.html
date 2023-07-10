@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>객체</title>
+</head>
+
+<body>
+  <h1>객체 - object</h1>
+  <p>자바스크립트에서 사물을 나타낼 때 객체표현을 사용한다.</p>
+  <p>객체는 , (콤마)를 사용해서 property를 원하는 만큼 입력할 수 있다.</p>
+  <p>그리고 각각의 property는 : (콜론)을 사용하여 key:value 형태로 구성한다</p>
+  <p>여기서 key값을 통해서 value의 값을 가져올 수 잇으면,key는 객체 안에 소속된 변수의 형태로 만들어진다.</p>
+  <p>property의 기본형태->{key1:value1,key2:value2}</p>
+  <p>그리고 객체의 key값에 저장되는 value는 문자,숫자,참거짓,배열,객체 등 모든 데이터형태가 저장될 수 있다.</p>
+  <p>property는 key와 value로 구성되어있다. key는 사용자가 자유롭게 지어줄 수 있다</p>
+
+  <script>
+    let person2 = [
+      "정현진",
+      38,
+      "남자",
+      false
+    ] //배열 , 순번을 사용하여 각각의 값들을 사용할 수 있다
+    //alert(person2[0])
+
+
+    //let person1 = {} 가장 기본적인 객체의 표현방식
+    let person3 = {
+      name: "정현진",
+      age: 38,
+      gender: "남자",
+      married: false
+    }
+    //name - key / "정현진" - value / name: "정현진" - 특징(property;속성)
+    //가져오는 방법 2가지
+    //person3["gender"]
+    //person3.name  //똑같은 표현
+
+    let ccc = { num1: 1, num2: 2, num3: 3 }
+    let ddd = { num1: 1, num2: 2, num3: 3 }
+    //각각 다른 폴더이기 때문에 변수명이 겹쳐도 상관이 없다
+
+    let person4 = {
+      name: "정현진",
+      scoreArray: [
+        100,
+        90,
+        80
+      ],
+      scoreObj: {
+        ko: {
+          semester1: 100,
+          semester2: 98,
+        },
+        en: {
+          semester1: 90,
+          semester2: 95
+        },
+        ma: {
+          semester1: 100,
+          semester2: 96
+        }
+      } //객체가 저장이 될 수도 있다
+    }
+
+    //alert(person4.scoreArray[1]) //90
+    //alert(person4.scoreObj.en) //90
+    //alert(person4.scoreObj.en.semester2)
+
+
+    let b = {
+      name: "정현진",
+      age: 37
+    }
+
+    b.name = "정민진"
+    //alert(b.name) > 정민진이 들어가게 된다
+    let c = [0, 2, 4]
+    c[2] = 6
+    c[1] = b.name
+    alert(c)
+
+  </script>
+
+</body>
+
+</html>

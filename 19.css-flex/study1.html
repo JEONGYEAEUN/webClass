@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex</title>
+  <link rel="stylesheet" href="./css/study1.css">
+</head>
+
+<body>
+  <h1>flex</h1>
+  <p>블록태그들을 나란히 배치할 때 사용하는 레이아웃 방법</p>
+  <p>flexible 유연한 레이아웃을 뜻한다</p>
+  <p>상황에 따라서 유동적으로 크기가 자동으로 조절되는 것을 목적으로한 레이아웃 방식</p>
+
+  <hr>
+
+  <h2>구조</h2>
+  <p>flex는 크게 flex-container / flex-item 으로 이루어져 있다.</p>
+  <p>flex를 활용하기 위해서는 반드시 부모와 자식태그의 포함관계가 만들어져 있어야만 한다.</p>
+  <ul>
+    <li>flex-container > 플랙스할 부모태그</li>
+    <li>flex-item > 플랙스당할 자식태그</li>
+  </ul>
+
+  <hr>
+  <h2>flex-container 전용 css 속성</h2>
+  <ul>
+    <li><b>display: flex</b> > 선택한 태그를 flex-container로 지정한다(메인축 (좌>우)과 수직(위>아래)축이 만들어진다)<br>flex-item들은 메인축을 따라서 나란히
+      배치되는 특징을
+      갖는다
+    </li>
+    <li><b>flex-direction</b> > 메인축의 방향을 바꿔주는 속성
+      <ul>
+        <li>row(기본값) : 좌>우</li>
+        <li> row-reverser : 우>좌</li>
+        <li> colume : 상>하</li>
+        <li> colume-reverser : 하>상</li>
+      </ul>
+      <p>메인축이 바뀔 때 수직축은 언제나 수직방향으로 형성된다.(수직축의 방향을 바꾸는 css속성은 없다. 위>아래, 좌>우)</p>
+    </li>
+    <li><b>justify-content</b> > 메인(중심)축을 따라서 아이템을 정렬하는 css속성
+      <ul>
+        <li>flex-start(기본값) : 메인축의 시작지점에 아이템을 정렬</li>
+        <li>flex-end : 메인축의 마지막지점에 아이템을 정렬함</li>
+        <li>center : 메인축의 중앙지점에 아이템을 정렬함</li>
+        <li>space-around : 아이템을 양끝에 붙이지 않고 좌우여백을 더해주는 것, 겹치는 부분은 여백끼리 더해지기 때문에 사이여백이 더 두껍게 표현이 된다</li>
+        <li>space-between : 아이템 을 양끝에 딱 붙이고 사이여백을 자동으로 동일하게 넣어줌</li>
+        <li>space-evenly : 아이템을 양끝에 붙이지 않고 사이를 포함하여 좌우에 똑같은 간격을 넣어준다 (표준css가 아니기 때문에 사용x)</li>
+      </ul>
+    </li>
+    <li><b>align-items</b> > 수직(반대)축을 따라서 아이템을 정렬하는 방법
+      /하나의 행 안에서 정렬
+      <ul>
+        <li>stretch(기본값) : flex-container의 세로사이즈만큼 아이템들의 세로사이즈를 늘린다</li>
+        <li>flex-start(기본값) : 수직축의 시작지점에 아이템을 정렬</li>
+        <li>flex-end : 수직축의 마지막지점에 아이템을 정렬함</li>
+        <li>center : 수직축의 중앙지점에 아이템을 정렬함</li>
+      </ul>
+    <li><b>align-content</b> > 수직축에 기준하여 전체 flex-item contents들을 정렬하는 방식, flex-wrap: wrap (아이템들의 줄바꿈을 허용하는 상태)일 때
+      정렬(유용하다)
+    </li>
+    </li>
+    <li><b>flex-wrap</b> > 아이템들의 줄바꿈을 설정하는 css속성
+      <ul>
+        <li>nowrap(기본값) : 줄바꿈을 허용하지 않는다, 상황에 따라서 아이템들의 크기를 유연하게 변형한다 (box-sizing에 대한 느슨한 태도를 보인다)</li>
+        <li>wrap : 줄바꿈을 허용한다, 상황에 따라서 아이템들의 크기를 유연하게 변형하지 않는다(box-sizing에 대한 예민한 태도를 보인다)</li>
+        <li>wrap-reverse : 반대로 래핑</li>
+      </ul>
+    </li>
+  </ul>
+  <br>
+  <p><span>flex-flow를 통해 flex-direction, flex-wrap값을 단축해서 표현할 수 있다.</span></p>
+
+  <hr>
+  <h2>flex-item 전용 css 속성</h2>
+  <ul>
+    <li>order - 아이템들의 배치 순서를 정해줄 수 있다. order값이 작은 것 부터 먼저 배치가 된다</li>
+    <li>align-self - 선택한 flex-item 각각을 원하는대로 수직축 기준으로 정렬할 수 있다. 사용되는 값으로는 flex-start/flex-end/center/stretch 가 있다.
+      (컨테이너에 align-items으로 값을 줬다고 해도 상속스타일에 의해 각각 지정한 align-self가 적용된다.)</li>
+    <li>flex-grow - 플랙스 컨테이너의 공간이 여유가 있어서 남았을 때, 남은 공간을 아이템들이 나눠갖는 비율</li>
+    <li>flex-shrink - 기본값:1 / 플렉스컨테이너의 너비가 줄어들어서 아이템들이 설정된 flex-basis의 값보다 더 작아져야할 때 줄어드는 비율(컨테이너의 flex-wrap아이템들이 줄바꿈이
+      허용이 안될 때
+      유효하다(nowrap상태))</li>
+    <li>flex-basis - flex-item들의 가로사이즈의 기준을 정할 때 사용한다.(평균적인 크기값)</li>
+    <li>flex:1 을 하면 각 박스가 같은 너비값을 나눠가진다</li>
+  </ul>
+
+
+
+  <div class="box">
+    <div class="a">a</div>
+    <div class="b">b</div>
+    <div class="c">c</div>
+    <div class="d">d</div>
+  </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+o1 {
+  list-style: none;
+}
+
+/* layout */
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border: 5px solid blue;
+  display: flex;
+  justify-content: space-around;
+  /* justifycon메인축정렬 */
+  /* align-items수직축정렬 */
+  align-items: flex-start;
+  height: 100px;
+  background: #fff;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+header:hover {
+  height: 300px;
+}
+
+header>* {
+  border: 1px solid red;
+}
+
+.gnb {
+  display: flex;
+  height: 100px;
+}
+
+.gnb>li {
+  border: 1px solid red;
+  text-align: center;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.gnb>li>ul {
+  border: 1px solid lime;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+}
+
+.gnb>li>ul>li {
+  padding: 10px;
+}
+
+.banner {
+  width: 100%;
+  height: 700px;
+  border: 3px solid gold;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* layout */
+
+header {
+  height: 60px;
+  width: 100%;
+  background: red;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header>section {
+  border: 1px solid white;
+  width: 200px;
+}
+
+aside {
+  width: 200px;
+  height: calc(100% - 60px);
+  left: 0;
+  top: 60px;
+  background: ghostwhite;
+  position: fixed;
+}
+
+main {
+  background: antiquewhite;
+  margin-left: 200px;
+  margin-top: 60px;
+  width: calc(100% - 200px);
+}
+
+main>div {
+  height: 100vh;
+  border: 5px solid black;
+}

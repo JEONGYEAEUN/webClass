@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  border: 1px red solid;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.box:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.box img {
+  float: right;
+  width: 50%;
+  border: 5px solid rgb(255, 250, 196);
+  margin: 20px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>변수와 상수</title>
+</head>
+
+<body>
+  <h1>상수</h1>
+  <p>(수정하지 않는 한 제 스스로)변하지 않는 수</p>
+  <hr>
+  <h1>변수</h1>
+  <p>변할 가능성이 있는 수</p>
+  <p>자바스크립트의 데이터를 저장할 수 있는 메모리 공간</p>
+  <p>변수를 사용하기 전에 변수를 미리 선언하여야 사용할 수 있다. (자바스크립트는 위에서 아래 왼쪽에서 오른쪽 순으로 해석하기 때문)</p>
+  <P>변수명은 오직 영어로만 정해줄 수 있다(숫자,한글,특수문자X, 한글이 되기는 하지만 추후에 오류가 날 확률이 크다)</P>
+
+
+  <script>
+    // let a; // 변수를 선언(생성) - 아무것도 들어있지 않은 비어있는 공간
+    // a = 1; // 변수를 초기화
+    // alert(a);
+    // let b = 20; //선언과 초기화를 축약해서 동시에 지정해줄 수도 있다
+    // b = 30;
+    // alert(b);//30이 나온다 변수는 변한다
+    // alert(b + a);
+
+    //let name = prompt("이름을 입력해주세요.");
+    //document.write("<h1>" + name + "님 환영합니다.</h1>")//정석
+    //document.write("<p>" + name + "님 오늘도 즐거운 하루 되세요</p>")
+
+    //let d = 77.5;
+    //alert(d + 10 + 1)
+    //alert(d + 1000 + 10)
+    //alert(d + 233 + 21 + 1)
+  </script>
+  <h2>변수의 종류</h2>
+  <p>변수는 크게 3종류가 있다.</p>
+  <ul>
+    <li>let - 동일한 변수명을 허용하지 않는다. ->가장 사용을 많이하게될 변수</li>
+    <li>var - 동일한 변수명을 허용한다.</li>
+    <li>const - 변수를 초기화한 이후 다른 값으로 대체하지 못하게 만든 상수형 변수</li>
+  </ul>
+  <script>
+    const num1 = 30;
+    // num1 = 40;
+    alert(num1)
+   // let num1 = 30;
+
+
+  </script>
+</body>
+
+</html>

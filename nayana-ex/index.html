@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나야나비즈니스</title>
+  <!-- <link rel="stylesheet" href="./css/index.css"> -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+</head>
+<!-- 영역을 나눌 때는 우선 전체를 영역으로 하나 잡아줘야 한다 -->
+<!-- 좌우로 나눠진 영역은 반드시 영역구성으로 나눠줘야한다. -->
+<!-- 홈페이지에서 메뉴단을 만들 때는 반드시 ul을 사용한다. -->
+
+<!-- 두개 이상의 메뉴가 구성될 때 쓰이는 영역구성 태그 > nav -->
+<!-- 이미지만 비디오만 들어가는 영역에 사용하는 태그 > figure (div="banner"  해도 상관없다)-->
+<!-- 전체메인을 구성하는 태그 > main -->
+<!-- 영역 안에 영역을 만들 때 사용해도 되는 영역 구성 > section -->
+
+<body>
+  <div class="all">
+    <div class="container">
+      <header>
+        <div class="logo">
+          <h1>
+            <a href="#">
+              <img src="./logo.gif" alt="나야나비즈니스 로고">
+            </a>
+          </h1>
+        </div>
+        <nav class="hmenu">
+          <ul class="lnb">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+            <li><a href="#">SITEMAP</a></li>
+          </ul>
+
+          <ul class="gnb">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">사업분야</a></li>
+            <li><a href="#">제품안내</a></li>
+            <li><a href="#">채용정보</a></li>
+            <li><a href="#">고객지원</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <figure><img src="./img_main.jpg" alt="고객과 함께 성장해온 1등 기업 나야존 업계 최고의 리더가 되는 기업이 되도록 노력하겠습니다."></figure>
+
+        <div class="contents">
+          <section>
+            <h2><img src="./m_tit_biz.gif" alt="비즈니스 정보"></h2>
+            <p><img src="./biz_img.gif" alt="각종 호스팅, 도메인, 홈페이지제작 등 토탈 솔루션 개발 업체로서 양질의 컨텐츠를 제공하여 더욱더 편리한 세상을 만들겠습니다.">
+            </p>
+            <a href="#"><img src="./btn_view.gif" alt="비즈니스 정보 자세히보기"></a>
+          </section>
+
+          <section class="news">
+            <h2>
+              <img src="./m_tit_notice.gif" alt="공지 및 뉴스">
+              <a href="#"><img src="./more.gif" alt="더보기"></a>
+            </h2>
+            <ul class="noticeList">
+              <li><a href="#">notice 1<span>2011-02-21</span></a></li>
+              <li><a href="#">notice 2<span>2011-02-20</span></a></li>
+              <li><a href="#">notice 3<span>2011-02-19</span></a></li>
+              <li><a href="#">notice 4<span>2011-02-18</span></a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2><img src="./m_tit_quick.gif" alt="빠른메뉴"></h2>
+            <ul class="quick">
+              <li><a href="#"><img src="./q_m1.gif" alt="상담문의게시판"></a></li>
+              <li><a href="#"><img src="./q_m2.gif" alt="채용정보"></a></li>
+              <li><a href="#"><img src="./q_m3.gif" alt="찾아오시는길"></a></li>
+            </ul>
+          </section>
+        </div>
+      </main>
+    </div>
+
+
+    <footer>
+      <div class="innerF">
+        <div class="fl">
+          <h1>
+            <a href="#">
+              <img src="./logo_foot.gif" alt="나야나비즈니스하단로고">
+            </a>
+          </h1>
+        </div>
+        <div class="fr">
+          <ul class="fm">
+            <li><a href="#"><img src="./f_priv.gif" alt="개인정보취급방침"></a></li>
+            <li><a href="#"><img src="./f_guide.gif" alt="이용약관"></a></li>
+            <li><a href="#"><img src="./f_sitemap.gif" alt="사이트맵"></a></li>
+            <li><a href="#"><img src="./f_email.gif" alt="이메일주소무단수집거부"></a></li>
+          </ul>
+          <address>(주)인터넷이나 주소 : 서울특별시 금천구 가산동 60-11 스타밸리타워 11층 / 대표전화:<a href="tel:0215777774">02-1577-7774</a> /
+            팩스:02-852-4744</address>
+          <p>COPYRIGHT (C) NAYAZOEN CO ,LTD. ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </footer>
+
+
+
+  </div> <!-- <aside></aside> -->
+
+</body>
+
+</html>

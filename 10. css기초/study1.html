@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css기초</title>
+  <style>
+    h2 {
+      color: orange
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS</h1>
+  <p>html 태그를 스타일링하는 언어- html파일이 전제가 되어야한다</p>
+  <hr>
+  <h2>방식</h2>
+  <ul>
+    <li>inline-style(element-style)
+      <p>태그를 직접 선택하여 시작태그에 속성을 부여하여 스타일을 입력하는 방식 </p>
+    </li>
+    <!-- ex) <h2 style="color:red">-->
+    <!-- 소스코드가 복잡해지고 잡업 시 효율성이 떨어져 최근에는 잘 사용하지 않는 방식 -->
+    <li>내부스타일시트
+      <p>head태그 안에 style태그를 작성하여 스타일을 입력하는 방법</p>
+    </li>
+    <!-- <style>적용할 태그{color:색상}</style> -->
+    <!-- 쓰이기는 하나 스타일 정보가 html파일 내부에 들어있기 때문에 수정 시에 효율이 떨어져 많이 쓰이지는 않는다 -->
+    <li>외부스타일시트
+      <p>html파일 바깥에 별도의 css파일을 생성해서 스타일을 입력하는 방식</p>
+    </li>
+    <!-- 스타일 정보를 html외부로 빼는 방식, css 파일을 따로 만들어 html파일과 연결 -->
+    <!-- 실무에서 가장 많이 쓰이는 방식 -->
+  </ul>
+  <hr>
+  <h2>css기초문법</h2>
+  <p>css는 태그를 선택해서 스타일을 입력하는 언어 그렇기 때문에 선택하는 부분과 스타일이 입력되는 부분으로 나뉜다.</p>
+  <p><b>선택(문)자{스타일속성:스타일속성값;스타일속성:스타일속성값;}</b></p>
+  <p>선택자(태그명,아이디명,클래스명으로 선택할 수 있다)</p>
+  <p>style태그 안에는 순순한 css문법만 사용될 수 있다.</p>
+  <p>여러가지 스타일 정보를 입력할 때 ; 로 구분해준다 - 구분자로 사용된다.</p>
+  <!-- @@{color:} -->
+
+
+</body>
+
+</html>

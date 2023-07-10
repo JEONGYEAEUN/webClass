@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+}
+
+.intro figure {
+  width: 1600px;
+}
+
+#introtxt path {
+
+  fill: transparent;
+  stroke: #ffff00;
+  /* transition: width 1s ease 0s, height 1s ease 1s; */
+}
+
+#introtxt.on path {
+  stroke-dashoffset: 0 !important;
+  fill: #00e21e;
+}
+
+/* 느낌표important무조건 적용시켜주는 속성 */

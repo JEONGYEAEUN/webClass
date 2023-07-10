@@ -1,0 +1,55 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.a {
+  /* border: width 1px;
+  border-style: solid;
+  border-color: red; */
+  /* border: 1px solid red; 테두리는 주로 이런 식으 축약형 표현을 많이 쓴다. */
+
+
+  /* border-left-width: 10px;
+  border-left-style: solid;
+  border-left-color: red; */
+  border-left: 10px solid skyblue;
+
+  /* border-right-width: 10px;
+  border-right-style: solid;
+  border-right-color: red; */
+  border-right: 10px solid skyblue;
+
+  border-top: 10px dotted blue;
+  border-bottom: 10px double navy;
+
+  border: 10px solid navy;
+
+  /* padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px; */
+  padding: 30px;
+
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+ul {
+  border: 1px solid blue;
+}
+
+.a+p {
+  border: 1px solid green;
+}
+
+p {
+  border: 1px solid red;
+}
+
+body {
+  border: 1px solid green;
+}

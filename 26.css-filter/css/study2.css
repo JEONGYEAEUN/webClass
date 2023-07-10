@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.conList {
+  display: flex;
+  width: 1440px;
+  height: 500px;
+  border: 1px solid red;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.conList>li {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.conList>li>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1)brightness(0.7);
+  transition: all 0.6s ease 0s;
+}
+
+.conList>li:hover img {
+  filter: grayscale(0)brightness(1);
+  transform: scale(1.2);
+}
+
+
+
+.box {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* 너비값을 지정해주었다면 너비의 반만큼 옮겨주면 된다 */
+  top: 70%;
+  text-align: center;
+}
+
+.box>h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  transition: all 0.6s ease 0s;
+}
+
+.conList>li:hover h3 {
+  transform: translateY(-30px);
+}
+
+.box>p {
+  padding-top: 20px;
+  position: relative;
+  opacity: 0;
+  transition: all 0.6s ease 0s;
+}
+
+.conList>li:hover p {
+  opacity: 1;
+}
+
+
+
+.box>p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 1px;
+  background: #fff;
+}
+
+/* 변환효과는 모든 레이아웃을 구성한 후에 적용해주는 것이 작업에 효율적이다 */

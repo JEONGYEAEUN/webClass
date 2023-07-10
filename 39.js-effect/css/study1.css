@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* 바탕화면 */
+
+.wrap {}
+
+.wrap>section {
+  border: 1px solid black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+/* ------------------------------ */
+
+.btnMenu {
+  border: 1px solid black;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* ------------------------------ */
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: rgb(194, 240, 255);
+  transform: translateX(-100%);
+  /* 자신이 가지고 있는 너비만큼 100%로 이동 */
+  transition: all 0.7s ease 0s;
+}
+
+nav.on {
+  transform: translateX(0%);
+}
+
+.gnb {}
+
+.gnb ul {
+  background: lightcyan;
+}
+
+.gnb>li {
+  height: 50px;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.gnb>li>a {
+  border-bottom: 1px solid black;
+  display: flex;
+  height: 50px;
+  box-sizing: border-box;
+  align-items: center;
+  border: 1px solid skyblue;
+  justify-content: space-between;
+}
+
+.depi {
+  /* border: 1px solid dodgerblue; */
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: all 0.7s ease 0s;
+}
+
+.depi:before {
+  content: "";
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 20px;
+  height: 1px;
+}
+
+.depi:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 0;
+  width: 1px;
+  height: 20px;
+  background: black;
+}
+
+.gnb>li.on .depi:after {
+  display: none;
+}
+
+/* 가상의 태그 비포 애프터 태그는 인라인 태그라 너비높이가 지정이 안된다 */
+/* 그러나 포지션 앱솔루트시 암묵적으로 인라인 블록으로 형태가 바뀌기 때문에 설정이 가능하게 된다 */
+
+.gnb ul>li {
+  height: 50px;
+  padding-left: 10px;
+}

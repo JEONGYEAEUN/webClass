@@ -1,0 +1,8 @@
+@media(max-width:767px) {
+  .frame {
+    /* 화면의 너비가 최대 767px 이하인 경우 적용될 스타일 */
+    width: 90%;
+    margin: 0 auto;
+    background: green;
+  }
+}

@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  border: 1px solid red;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+  box-shadow: -50px -50px 10px royalblue, 50px 50px 10px red, -50px 50px 10px green, 50px -50px 10px yellow;
+  text-shadow: 2px 2px 5px grey;
+  transition: all 0.5s ease 0s;
+}
+
+/* box-shadow(x)(y)(확산정도)(색상) */

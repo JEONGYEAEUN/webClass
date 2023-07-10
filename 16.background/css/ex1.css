@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: ivory;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  background: url(../ex1/dream.jpg) no-repeat 100% 100%;
+}
+
+
+
+.container>h1 {
+  font-size: 50px;
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+  background: green;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  /* height: 100px;
+  line-height: 100px; */
+  margin-bottom: 10px;
+}
+
+.container>h3 {
+  font-size: 30px;
+  background: orange;
+  border-bottom: 3px solid red;
+  margin-bottom: 10px;
+}
+
+.container>p {
+  margin-bottom: 10px;
+
+
+}
+
+.copy {
+  border-top: 3px solid red;
+  font-weight: bold;
+  padding-top: 10px;
+
+}

@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+address,
+em,
+i {
+  font-style: normal;
+}
+
+strong,
+b {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 19px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.banner {
+  /*  너비는 블록레벨 태그이기 때문에 부모태그만큼 자리를 차지하므로 굳이 지정해 줄 필요가 없다 */
+  height: 250px;
+  background: url(../ex3/sub_vis01_02.jpg) no-repeat;
+  margin-bottom: 50px;
+
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+
+  margin: 0 auto;
+}
+
+.container>h2 {
+
+  font-size: 30px;
+  font-weight: bold;
+  background: url(../ex3/sub_tit_line.gif) repeat-x 0 50%;
+  /* text-align: center; 가운데로 가는 경우 */
+  margin-bottom: 100px;
+}
+
+.container>h2>span {
+
+  background: white;
+  padding-right: 18px;
+}
+
+.container>h3 {
+  font-size: 52px;
+
+  font-family: "풀무원체";
+  text-align: center;
+  padding: 0 70px;
+  margin-bottom: 50px;
+}
+
+.container>h3>span {
+  color: #7eae4b;
+}
+
+@font-face {
+  font-family: "풀무원체";
+  src: url(../ex3/PulmuoneLOHASBold.woff);
+}
+
+.container section {
+
+  padding: 40px 90px 50px;
+  width: 810px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.container>section>h4 {
+  font-family: "풀무원체";
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+
+.container>section>h4+p {
+  margin-bottom: 30px;
+}
+
+
+
+
+/* html {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  width: 1920px;
+  height: 250px;
+  background: url(../ex3/sub_vis01_02.jpg) no-repeat;
+}
+
+.category>h3 {
+  font-size: 30px;
+  margin-top: 50px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+span {
+  display: inline-block;
+  background: url(../ex3/sub_tit_line.gif);
+}
+
+
+
+
+span2 {
+  color: #7eae4b;
+}
+
+div.title {
+  font-size: 52px;
+  margin: 100px 0 50px;
+  padding: 0 70px;
+  font-family: "풀무원체";
+  text-align: center;
+
+
+}
+
+@font-face {
+  font-family: "풀무원체";
+  src: url(../ex3/PulmuoneLOHASBold.woff);
+}
+
+.content {
+  padding: 40px 90px 50px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  width: 630px;
+  height: auto;
+}
+
+.subTitle {
+  font-size: 35px;
+  font-family: "풀무원체";
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.con2 {
+  margin-top: 30px;
+} */

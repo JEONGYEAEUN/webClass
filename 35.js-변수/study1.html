@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>변수</title>
+</head>
+
+<body>
+  <h1>변수</h1>
+  <p>변수는 크게 지역변수와 전역변수로 나뉜다.</p>
+  <h2>지역변수</h2>
+  <p>지역변수는 특정지역에서 생성된 변수이며 특정지역 안에서만 접근이 가능하다</p>
+  <h2>전역변수</h2>
+  <p>전역변수는 전체지역에서 생성된 변수이며 모든 지역에서 접근이 가능하다</p>
+
+  <p>tip)변수는 안에서 밖으로는 접근이 가능하지만 밖에서 안으로는 접근이 불가능하다</p>
+
+  <script>
+    let a = 100;  // 전역변수
+    let person = { name: a, age: 38 } // 지역변수 객체에 특정 공간 안에서 만든 변수 / person은 전역변수
+    //alert(person.name)
+
+
+    function showName() {
+      //let a = 200
+      alert(a)
+    }
+    showName()
+
+    //result는 함수 안에서 만들어진 변수 그러므로 함수 바깥에서는 접근할 수가 없다(함수 바깥에서 불러 기능을 소환할 수 없음)
+    //특정공간(함수의 안,객체의 안) 안에서 바깥 쪽으로는 접근이 가능하다
+    //전역의 공간과 어떤 함수 안의 지역 공간은 다른 폴더 개념으로 동일한 변수명을 지어줄 수 있다
+    //같은 특정지역공간 안에 동일한 변수가 있으면 그것을 적용 같은 지역에 없다면 외부로 나가 그것을 참고한다.
+    //이 때 특정지역에서는 바깥 쪽이 참고가 가능하지만 바깥 공간에서는 특정지역을 참고하는 것이 불가능하다
+
+  </script>
+</body>
+
+</html>

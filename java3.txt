@@ -1,0 +1,38 @@
+데이터형태(datatype/자료구조)
+
+string    "" '' ``
+number   12345678
+boolean    true/false
+array     ["데이터1","데이터2"]
+object    {key1:value,key2:function(){}}  key2처럼 함수가 저장될 수도 있다
+function  function 함수명(){}
+              let 함수명 = function(){}
+              let 함수명 = ()=>{}
+
+
+문법구문
+
+조건문 if(){}   /   if(){}else{}   /    if(){}else if(){}else if(){}else{}  
+반복구문
+반복변수 변수증감식 반복조건
+while(){}
+for(let i=0 ; i<a ; i++){}  i가 a가 될 때까지 반복
+
+
+연산방법(계산방법)
+
++
+-
+*
+/
+%
+--------------------------------
+a++
+a+=1
+a>b
+a>=b 크거나 같다
+a<=b 작거나 같다
+a==b a와 b는 같다
+a!=b a와 b는 같지않다
+a===b a는 b와 완전히 같다
+a?b:c (a가참이면b를거짓이면c를남겨라 - 삼항연산자)

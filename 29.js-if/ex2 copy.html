@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비만도예제</title>
+  <link rel="stylesheet" href="./css/ex1.css">
+</head>
+
+<body>
+  <h1>퀴즈</h1>
+  <pre>사용자에게 체중과 키를 입력받아서 bmi수치를 계산하여 수치에 따라 비만 과체중 정상 저체중으로 나누어 결과를 body태그에 필기하는 소스코드를 완성해보세요
+  
+    bmi계산식
+    70kg의 170cm의 bmi수치 계산식
+    70/(1.7*1.7)
+
+    계산된 bmi가 25이상이라면 비만
+    23이상 24.9이하라면 과체중
+    18.5이상 22.9이하라면 정상
+    18.5미만이라면 저체중
+
+    완성예시)당신의 키는 170cm이고 몸무게는 70kg입니다 bmi수치는 24.2이며 과체중입니다.
+
+  </pre>
+
+
+  <script>
+    // let name = prompt("당신의 이름을 입력하세요")
+    // let height = Number(prompt("키를 입력하세요"))
+    // let weight = Number(prompt("몸무게를 입력하세요"))
+
+    function getBMI(uHeight, uWeight) {
+      let result;
+      result = uWeight / Math.pow((uHeight / 100), 2)
+      return result
+    }
+    // let bmi = getBMI(height, weight)
+
+
+    //--------------------------------------------------
+    // let bmiResult = bmi >= 25 ? "비만" :
+    //   bmi >= 23 && bmi <= 24.9 ? "과체중" :
+    //     bmi >= 18.5 && bmi <= 22.9 ? "정상" : "저체중"
+
+    //계산된 결과로 문자데이터가 남는다    
+
+    //--------------------------------------------------
+
+    function getBMI_result(bmiNum) {
+      let result
+      if (bmiNum >= 25) {
+        result = "비만"
+      } else if (bmiNum >= 23 && bmiNum <= 24.9) {
+        result = "과체중"
+      } else if (bmiNum >= 18.5 && bmiNum <= 22.9) {
+        result = "정상"
+      } else {
+        result = "저체중"
+      }
+      return result
+    }
+    //console.log(getBMI_result(bmi)) 
+    // 다 지워지고 비만이라는 문자 데이터가 남게된다
+    //console.log(getBMI_result(getBMI(height, weight)))
+
+
+
+    function showResult(uName, uHeight, uWeight, uBmi, uBmiResult) {
+      document.write(` <table class="gradeStyle">
+    <caption>${uName}님의 비만도 검사결과</caption>
+    <tr>
+      <th>신장</th>
+      <td>${uHeight}cm</td>
+    </tr>
+    <tr>
+      <th>체중</th>
+      <td>${uWeight}kg</td>
+    </tr>
+    <tr>
+      <th>bmi</th>
+      <td>${uBmi}점</td>
+    </tr>
+    <tr>
+      <th>결과</th>
+      <td>${uBmiResult}</td>
+    </tr>
+  </table>`)
+    }
+    showResult("정현진", 180, 40, getBMI(180, 40), getBMI_result(getBMI(180, 40)))
+    showResult("정민진", 170, 20, getBMI(170, 20), getBMI_result(getBMI(170, 20)))
+
+
+  </script>
+</body>
+
+</html>

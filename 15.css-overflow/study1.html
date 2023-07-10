@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>overflow</title>
+  <style>
+    .textFrame {
+      width: 150px;
+      height: 150px;
+      border: 5px solid red;
+      overflow: scroll;
+      overflow-x: scroll;
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1>overflow</h1>
+  <p>overflow - 흘러넘친 컨텐츠에 대해서 대응하기위한 css속성이다.</p>
+
+  <ul>
+    <li>hidden - 흘러넘친 컨텐츠에 대해서 흘러넘친 컨텐츠를 안 보이게 처리</li>
+    <li>scroll - 흘러넘친 컨텐츠에 대해서 스크롤바를 표현</li>
+    <li>auto - 흘러넘친 컨텐츠에 대해서 스크롤바를 표현(컨텐츠의 양을 판단하여 스크롤바가 필요하면 스크롤바를 만들어주고 필요없으면 만들지 않는다.)</li>
+    <li>visible(기본값) - 흘러넘친 컨텐츠를 그대로 보여주도록 처리</li>
+  </ul>
+  <div class="textFrame">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint cumque nam unde quidem harum vitae nihil
+    consequuntur. Non sed placeat fugiat, quam asperiores reiciendis illum voluptates nisi consequatur repudiandae
+    magni!
+  </div>
+</body>
+
+</html>

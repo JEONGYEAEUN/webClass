@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  border: 5px solid rgb(81, 189, 189);
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  transition: all 0.5s ease 0s;
+}
+
+.a:hover {
+  transform: translateX(50%);
+}
+
+.b:hover {
+  transform: translateY(50%);
+}
+
+.c:hover {
+  transform: translateX(-50%) translateY(50%);
+  /* transform: translate(-50%,50%); 로 줄여서 써줄 수 있다 */
+}
+
+.d:hover {
+  transform: translateZ(100px);
+}
+
+.parent {
+  border: 1px solid red;
+  height: 60vh;
+  perspective: 600px;
+  perspective-origin: 50% 50%;
+  /* 좌표, 50% 50%이 기본값이다 */
+}
+
+.e {
+  transform-origin: 50% 50%;
+}
+
+.e:hover {
+  transform: scaleX(2);
+
+}
+
+.f:hover {
+  transform: scaleY(2);
+}
+
+.g:hover {
+  transform: scale(1.5);
+}
+
+/* 소숫점값도 쓸 수 있다 */
+
+.h {
+  transform-origin: 10% 10%;
+}
+
+.h:hover {
+  transform: rotate(360deg);
+}
+
+.i:hover {
+  transform: rotateX(180deg);
+}
+
+.j:hover {
+  transform: rotateY(180deg);
+}
+
+.k:hover {
+  transform: skewX(30deg);
+}
+
+/* 기울기 */
+
+.l:hover {
+  transform: skewY(30deg);
+}

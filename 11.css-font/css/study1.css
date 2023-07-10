@@ -1,0 +1,75 @@
+html {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.font_list {
+  font-size: 2rem;
+}
+
+.a {
+  font-size: 2em;
+}
+
+.b {
+  font-weight: lighter;
+}
+
+.c {
+  font-style: italic;
+}
+
+.d {
+  font-size: 20px;
+  line-height: 200%;
+}
+
+.e {
+  font-family: dotum, "돋움", sans-serif;
+}
+
+.f {
+  text-indent: 100px;
+}
+
+.g {
+  text-decoration: underline;
+}
+
+.h {
+  letter-spacing: 15px;
+}
+
+.i {
+  word-spacing: 20px;
+}
+
+.j {
+  word-break: keep-all;
+}
+
+.k {
+  white-space: nowrap;
+}
+
+.l {
+  text-align: justify;
+}
+
+.m {
+  text-transform: capitalize;
+}
+
+.p1 {
+  /* font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif
+  line-height: 200%; */
+  font: italic bold 24px / 200% 'Times New Roman',
+    Times,
+    serif;
+}

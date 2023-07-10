@@ -1,0 +1,39 @@
+table {
+  border-collapse: collapse;
+}
+
+/* 표태그의 기본스타일 리셋해주는 과정 */
+
+.gradeStyle caption {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.gradeStyle {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.gradeStyle th {
+  border: 1px solid black;
+  padding: 5px 0;
+  border-left: none;
+}
+
+.gradeStyle td {
+  border: 1px solid black;
+  padding: 5px 0;
+  text-align: center;
+  border-right: none;
+}
+
+.gradeStyle tr:last-of-type>th {
+  background: rgb(95, 95, 95);
+  color: #fff;
+}
+
+.gradeStyle tr:last-of-type>td {
+  background: rgb(95, 95, 95);
+  color: #fff;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>svg</title>
+  <link rel="stylesheet" href="./css/study1.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="./js/study1.js"></script>
+</head>
+
+<body>
+
+  <ul class="list">
+    <li>
+      <svg viewBox="0 0 120 120">
+        <!-- <circle></circle> 같은 표현으로 <circle />도 있다 -->
+        <circle class="a" cx="60" cy="60" r="50" />
+        <!-- r은 반지름 -->
+      </svg>
+    </li>
+    <li>
+      <svg viewBox="0 0 120 120">
+        <circle class="a" cx="60" cy="60" r="50" />
+      </svg>
+    </li>
+    <li>
+      <svg viewBox="0 0 120 120">
+        <circle class="a" cx="60" cy="60" r="50" />
+      </svg>
+    </li>
+    <li>
+      <svg viewBox="0 0 120 120">
+        <circle class="a" cx="60" cy="60" r="50" />
+      </svg>
+    </li>
+  </ul>
+  <!-- (0.0)좌표에서 (100.100)좌표의 거리를 가진다 -->
+  <!-- 픽셀단위가 아니다 -->
+
+  <div class="line">
+    <svg class="c1" viewBox="0 0 1486.74 677.45">
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+          <path class="c1" d="M.35,243.24s621-610,784,104,702,46,702,46" />
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <!-- <div class="box">
+    <svg class="sb" viewBox="0 0 996.03 655.92">
+      <defs>
+        <linearGradient id="linear-gradient" x1="498.01" x2="498.01" y2="655.92" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#f7c200" />
+          <stop offset="0.96" stop-color="#e6561a" />
+        </linearGradient>
+      </defs>
+      <polygon class="cls-1" points="467.7 0.56 0.91 261.24 516.2 655.28 995.11 255.18 467.7 0.56" />
+    </svg> -->
+
+  <!-- <svg class="sb" viewBox="0 0 522.56 917.62">
+      <defs>
+        <linearGradient id="linear-gradient" y1="458.81" x2="522.56" y2="458.81" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#f7c200" />
+          <stop offset="0.96" stop-color="#e6561a" />
+        </linearGradient>
+      </defs>
+      <polygon class="cls-1" points="0.7 1.25 522.06 443.8 522.06 916.65 97.7 613.54 0.7 1.25" />
+    </svg>
+
+    <svg class="sb" viewBox="0 0 570.98 899.16">
+      <defs>
+        <linearGradient id="linear-gradient" x1="570.98" y1="449.58" x2="0" y2="449.58" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#f7c200" />
+          <stop offset="0.96" stop-color="#e6561a" />
+        </linearGradient>
+      </defs>
+      <polygon class="cls-1" points="24.79 364.73 0.54 898.2 521.9 552.66 570.39 0.99 24.79 364.73" />
+    </svg> -->
+  </div>
+
+  <!-- 이미지로 넣을 수는 있지만 효과를 만들 수 없다 -->
+  <script>
+    $(document).ready(function () {
+
+      $(document).mousemove(function (event) {
+
+        let x = event.clientX * 0.01
+        let y = event.clientY * 0.01
+
+        $(".cls-1").attr("points", `${x + 467} ${0.56 + y} ${0.91 - x * 3} 261.24 516.2 655.28 995.11 255.18 ${x + 467} ${0.56 + y}`)
+      })
+
+
+
+    })
+
+  </script>
+</body>
+
+</html>

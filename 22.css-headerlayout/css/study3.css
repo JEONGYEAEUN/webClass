@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* layout */
+
+header {
+  border: 1px solid red;
+  height: 80px;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 100%;
+  height: 0px;
+  background: gold;
+  opacity: 0.85;
+  transition: all 0.5s ease 0s;
+}
+
+header.on:after {
+  height: 230px;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 40%;
+  height: 0;
+  background: pink;
+  opacity: 0.85;
+  transition: all 0.5s ease 0s;
+  z-index: 100;
+}
+
+header.on:before {
+  height: 230px;
+}
+
+.innerheader {
+  border: 1px solid blue;
+  width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+
+  align-self: center;
+}
+
+.gnb {
+  width: 800px;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.gnb>li {
+  flex: 1;
+
+}
+
+.gnb>li>a {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.gnb>li>a:hover {
+  background: black;
+  color: gold;
+}
+
+/* 2depth */
+
+.gnb>li:hover .gnb2dep {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.gnb2dep {
+  border: 1px solid lime;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 80px;
+  width: 100%;
+  display: flex;
+  font-weight: 400;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gnb2dep>section {
+  flex: 1;
+  /* 플랙스1은 아래 요소를 축약해서 사용한 표현 */
+  /* flex-basis: 0;
+  flex-shrink: 1;
+  flex-grow: 1; */
+  padding: 30px;
+}
+
+.gnb2dep>section:nth-of-type(2) {
+  display: flex;
+}
+
+.gnb2dep>section:nth-of-type(2)>ul {
+  margin-left: 15px;
+  padding-left: 15px;
+  border-left: 1px solid white;
+}
+
+.banner {
+  height: 60vh;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

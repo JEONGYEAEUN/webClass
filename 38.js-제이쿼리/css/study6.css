@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrap>div {
+  height: 100vh;
+}
+
+.wrap>div:nth-of-type(1) {
+  background-color: rgb(13, 50, 255);
+}
+
+.wrap>div:nth-of-type(2) {
+  background-color: rgb(30, 99, 250);
+}
+
+.wrap>div:nth-of-type(3) {
+  background-color: rgb(56, 118, 252);
+}
+
+.wrap>div:nth-of-type(4) {
+  background-color: rgb(71, 157, 255);
+}
+
+.wrap>div:nth-of-type(5) {
+  background-color: rgb(146, 193, 255);
+}
+
+.con1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.con1 p {
+  font-size: 0.4em;
+  letter-spacing: 13px;
+}
+
+.con2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pList {
+  font-size: 5rem;
+  font-weight: bold;
+  display: flex;
+  color: #fff;
+}
+
+.pList>li {
+  transform: translateY(50px);
+  opacity: 0.1;
+}
+
+.pList>li:nth-of-type(1) {
+  transition: all 0.5s ease 0s;
+}
+
+.pList>li:nth-of-type(2) {
+  transition: all 0.5s ease 0.25s;
+}
+
+.pList>li:nth-of-type(3) {
+  transition: all 0.5s ease 0.5s;
+}
+
+.pList>li:nth-of-type(4) {
+  transition: all 0.5s ease 0.75s;
+}
+
+.typo.on .keyword li {
+  opacity: 1;
+}

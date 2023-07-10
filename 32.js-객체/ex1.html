@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cgv</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>무비차트</h2>
+    <ol class="moviechart">
+      <script>
+        let moviechart = [
+          {
+            lank: 1,
+            imgfileName: "img1.jpg",
+            movieTitle: "가디언즈 오브 갤럭시-volume3",
+            reserRate: 40.8
+          },
+          {
+            lank: 2,
+            imgfileName: "img2.jpg",
+            movieTitle: "분노의 질주-라이드 오어 다이",
+            reserRate: 17.0
+          },
+          {
+            lank: 3,
+            imgfileName: "img3.jpg",
+            movieTitle: "슈퍼 마리오 브라더스",
+            reserRate: 8.1
+          },
+          {
+            lank: 4,
+            imgfileName: "img4.jpg",
+            movieTitle: "더 퍼스트 슬램덩크",
+            reserRate: 5.3
+          },
+          {
+            lank: 5,
+            imgfileName: "img5.jpg",
+            movieTitle: "메리 마이 데드 바디",
+            reserRate: 5.7
+          }
+        ]
+
+
+        //let moviechart = [
+        // [
+        //   1,
+        //   "img1.jpg",
+        //   "가디언즈 오브 갤럭시-volume3",
+        //   40.8
+        // ],
+        // [
+        //   2,
+        //   "img2.jpg",
+        //   "분노의 질주-라이드 오어 다이",
+        //   17.0
+        // ],
+        // [
+        //   3,
+        //   "img3.jpg",
+        //   "슈퍼 마리오 브라더스",
+        //   8.1
+        // ],
+        // [
+        //   4,
+        //   "img4.jpg",
+        //   "더 퍼스트 슬램덩크",
+        //   5.3
+        // ],
+        // [
+        //   5,
+        //   "img5.jpg",
+        //   "메리 마이 데드 바디",
+        //   5.7
+        // ]
+        //]
+
+        for (let i = 0; i < moviechart.length; i++)
+
+          document.write(`
+       <li>
+        <figure>
+          <img src="./img/${moviechart[i].imgfileName}" alt="${moviechart[i].movieTitle}">
+          <span>${moviechart[i].lank}</span>
+          <ul class="hiddenmenu">
+            <li><a href="#">상세보기</a></li>
+            <li><a href="#">예매하기</a></li>
+          </ul>
+        </figure>
+        <h3>${moviechart[i].movieTitle}</h3>
+        <p>예매율 ${moviechart[i].reserRate}%</p>
+      </li>
+      `)
+      </script>
+
+      <!-- 리스트를 먼저 만들어놓고 반복되는 부분을 변수 처리하여 반복문으로 변경 -->
+    </ol>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>링크태그, 속성</title>
+</head>
+
+<body>
+  <h1 id="title">속성(ATTRIBUTE)</h1>
+  <P>속성은 언제나 시작태그에 한칸 띄어서 구분하여 입력한다.</P>
+  <P>속성은 태그에 2개 이상 여러 개가 사용될 수 있다. 입력하는 순서는 상관없다.</P>
+  <P>속성표현법 - [속성명 = "속성값"]</P>
+  <P>= 등호는 등호 기준 우측의 값을 왼쪽 속성에 적용(대입) 해주는 대입연산자로 사용된다.</P>
+  <p>속성은 글로벌과 로컬속성으로 나뉜다 href속성은 a태그에만 사용할 수 있는 로컬속성이며 id라는 속성은 모든 태그에 적용할 수 있는 글로벌 속성이다.</p>
+
+
+  <hr>
+  <h1>링크<a href="#">태그</a></h1>
+  <P>홈페이지를 사용하는 사용자가 클릭했을 때 목적지 페이지로 이동시켜주는 태그</P>
+  <P>a태그는 href속성이 필수적으로 사용되어야 하며 다른 속성들은 상황에 맞춰 선택적으로 사용할 수 있다</P>
+  <p>a태그는 강조태그처럼 클릭했을 때 링크시켜야되는 단어나 문장에 자유롭게 사용 가능하다</p>
+  <a href="https://www.naver.com/" target="_blank" title="클릭 시 네이버 홈페이지로 이동합니다">홈페이지로 바로가기</a>
+
+  <!-- target의 기본값은 self (현재창에서 열기)라 속성값을 입력하지 않으면 현재창에서 이동하게 된다 -->
+  <!-- title 속성은 클릭 전에 마우스를 올려봤을 때 사용자들이 페이지의 정보를 사전에 확인할 수 있다  -->
+
+  <a href="https://www.kakaocorp.com/page/" target="_blank">카카오 바로가기</a>
+  <br>
+  <a href="./study2.html">study2페이지로 이동</a>
+  <hr>
+  <h1>a태그의 여러가지 사용법</h1>
+  <a href="tel:01062629996">선생님 전화번호</a>
+  <a href="./download/subContets.zip">파일 다운로드</a>
+  <a href="#title">책갈피기능 사용 속성 타이틀로 이동/스크롤이 들이가는 같은 페이지내에서 원하는 부분으로 바로가기</a>
+  <a href="../2.최소문맥태그/ex1.html#section1">예제페이지 접근성지침 부분으로 이동</a>
+
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display</title>
+  <link rel="stylesheet" href="./css/study1.css">
+</head>
+
+<body>
+  <h1>display - 태그의 형태</h1>
+  <p>태그의 생김새: 기본적으로 직사각형</p>
+  <p>전제: 우리가 입력한 태그는 먼저 만들어진 순서대로 위에 하나씩 쌓이는 거꾸로하는 테트리스 같다</p>
+  <ul>
+    <li>block - 90%</li>
+    <li>inline - 8%</li>
+    <li>inline-block - 2%</li>
+  </ul>
+  <hr>
+  <h2>block - 블록레벨태그</h2>
+  <p>디스플레이 속성이 display:block; 으로 설정되어있음</p>
+  <p>포함되는 컨텐츠의 양과 관계없이 무조건 부모태그만큼의(body태그) 너비를 다 차지하는 형태</p>
+  <p>박스형태의 태그 - 가로세로 사이즈를 지정할 수 있다.</p>
+  <p>br태그를 사용하지 않아도 부모태그(body태그)의 너비를 다 차지하고 있기 때문에 자동으로 줄바꿈이 된다 - 언제나 새로운 줄에서 시작</p>
+  <p class="box">p, table, h1~h6, address, blockquote, div, ul, li, ol, dl, dt, dd, header, nav, footer, section,
+    article, aside,
+    ... => 거의
+    대부분 블록태그이다</p>
+
+
+  <hr>
+
+
+  <h2>inline - 인라인레벨태그</h2>
+  <p>display;inline; 으로 설정되어있음</p>
+  <p>포함되는 컨텐츠의 양만큼 공간을 차지하는 형태 - 줄의 어느 곳에서나 시작할 수 있다</p>
+  <p>라인형태의 태그 - 가로세로 사이즈를 지정해줘도 변화가 없다</p>
+  <p>포함되는 컨텐츠의 양만큼 공간을 차지하기 때문에 줄바꿈되지 않고 나란히 배치될 수 있다</p>
+  <p>span, a, 강조태그, br, img, input, label, ...</p>
+  <span>span</span>
+  <span class="line">span Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam harum blanditiis neque
+    incidunt eos pariatur delectus, quis tenetur aliquam omnis necessitatibus itaque aspernatur voluptatibus ut! Quod
+    dolorem debitis dolore. Vel.</span>
+
+
+  <hr>
+
+
+  <h2>inline-block - 인라인블록레벨태그</h2>
+  <p>display:inline-block; 으로 설정되어있음</p>
+  <p>블록레벨과 인라인레벨 특징을 반반 섞은 형태</p>
+  <p>블록레벨태그처럼 가로와 세로사이즈를 지정할 수 있는 박스형태이지만<br>인라인레벨태그처럼 포함하는 컨텐츠의 양만큼 공간을 차지하여 나란히 배치할 수 있다</p>
+  <p>img, video, input, button, select, label, audio </p>
+
+
+
+</body>
+
+</html>

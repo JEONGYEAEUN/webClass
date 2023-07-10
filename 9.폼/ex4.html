@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예약</title>
+</head>
+
+<body>
+
+  <form action="#">
+    <h3>예약자정보를 입력해주세요</h3>
+    <table border="1">
+      <tr>
+        <th><label for="reser_name">예약자 성명</label></th>
+        <td><input type="text" id="reser_name" placeholder="이름" required></td>
+      </tr>
+
+      <tr>
+        <th><label for="reser_birth">생년월일</label></th>
+        <td><input type="number" id="reser_birth" placeholder="8자리 숫자만 입력해주세요" required></td>
+      </tr>
+
+      <tr>
+        <th><label for="reser_tel">에약자 연락처</label></th>
+        <td><input type="text" id="reser_tel" placeholder="예시)010-1111-1111" required></td>
+      </tr>
+
+      <tr>
+        <th><label>내원 기록</label></th>
+        <td><label for="reser_fv">초진</label>
+          <input type="radio" id="reser_fv" name="reser_history">
+          <label for="reser_sv">재진</label>
+          <input type="radio" id="reser_sv" name="reser_history">
+        </td>
+      </tr>
+
+      <tr>
+        <th><label for="reser_desc">예약내용</label></th>
+        <td><textarea id="reser_desc" placeholder="아프신 부위 및 증상을 남겨주세요.예약내용을 남겨주시면 연락처로 상담전화를 드립니다."></textarea></td>
+      </tr>
+
+
+
+      <tr>
+        <th colspan="2"><input type="checkbox" id="reser_agree" required>개인정보수집동의</th>
+
+      </tr>
+
+      <tr>
+        <th colspan="2">
+          <input type="submit" value="온라인예약 신청하기">
+          <input type="reset" value="취소">
+        </th>
+      </tr>
+
+    </table>
+
+    </div>
+  </form>
+
+</body>
+
+</html>

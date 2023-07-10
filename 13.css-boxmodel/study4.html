@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>boxmodel - 축약형표현</title>
+  <link rel="stylesheet" href="./css/study4.css">
+</head>
+
+<body>
+  <h1>축약형표현</h1>
+  <p>margin/padding의 축약형 표현 규칙은 같다</p>
+  <div class="box1">
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    > margin: 50px(좌우) 100px(상하);
+  </div>
+
+  <div class="box2">
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    > margin: 50px 200px 100px;
+  </div>
+
+  <div class="box3">
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 150px;
+    margin-left: 200px;
+    > margin: 50px 100px 150px 200px (시계방향)
+  </div>
+
+  <hr>
+
+  <h2>margin의 상쇄 규칙</h2>
+  <p>padding은 상쇄 규칙이 없다</p>
+  <p>margin은 테두리 기준 바깥쪽 여백이므로 인접한 태그를 밀어내거나 밀릴 수 있다.</p>
+  <P>바깥쪽 여백이기 때문에 인접한 태그 사이에는 상쇄 규칙이 적용된다.(인접한 두개의 태그의 margin값 중 큰 값이 적용된다. 50/100일 경우 100px만 적용)</P>
+  <p><b>상하 margin만 상쇄된다, 좌우X(50,50으로 정했다면 총 100px의 공백이 생기게 됨)</b></p>
+
+  <div class="box4">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit cum, sint provident incidunt distinctio reiciendis
+    dolorum animi neque odit, quo aliquam quaerat pariatur doloremque accusamus quidem. Sed, quam ullam? Vero?
+  </div>
+
+  <div class="box5">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum non consequatur quae officiis odio iusto atque
+    doloribus similique, quam pariatur nisi illo cumque dignissimos fuga? Odio minus rem tempore illum!
+  </div>
+
+  <div class="box6">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sequi corporis nulla ut quam ipsa similique explicabo
+    porro. Esse, praesentium nesciunt! Reprehenderit pariatur labore in id odio. Eius, libero commodi.
+  </div>
+  <div class="box7">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, odio. Nemo tenetur perspiciatis delectus
+    repellendus sint cumque numquam dicta, modi magnam corporis quis aliquam, sed totam facere, illo veritatis nesciunt!
+  </div>
+
+  <hr>
+
+  <h2>inline level태그에서의 margin과 padding</h2>
+  <p>inline레벨태그는 박스형태가 아니며, 라인형태이다. 그래서 마진과 패딩이 독특하다.</p>
+  <p>inline레벨태그에서는 좌우마진은 제한적으로 적용되고 상하값은 적용되지 않는다</p>
+  <p>inline레벨태그에서는 좌우패딩은 제한적으로 적용되고, 상하값은 지정하지 않는다.</p>
+  <span class="line1">inline Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto expedita voluptatum
+    nulla deserunt, dolorem, quod consectetur omnis eum illum culpa doloremque unde ea aspernatur deleniti. Magnam,
+    fugit a? Enim, iusto!</span>
+  <b>strong!!!!</b>
+
+</body>
+
+</html>

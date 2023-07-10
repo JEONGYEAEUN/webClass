@@ -1,0 +1,25 @@
+<body>
+<div class="container">
+
+  <header>
+       <div class="logo"></div> -로고
+       <nav></nav> - 메뉴
+  </header>
+
+  <main>
+      <figure></figure> - 대표배너
+  </main>
+
+   <footer>
+  </footer>
+
+</div>
+
+  <aside>
+      <a href></a>
+  </aside>
+
+</body>
+
+
++탭메뉴는 dl로 구성 dd안에 리스트

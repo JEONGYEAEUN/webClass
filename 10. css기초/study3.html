@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클래스와 아이디를 사용한 선택(문)자 구성</title>
+  <style>
+    h1.a {
+      color: blueviolet;
+    }
+
+    /* h1태그 중에서 a 클래스가 포함되어있는 h1태그들을 선택 */
+
+    .a {
+      color: brown;
+    }
+
+    /* a라는 클래스가 있는 모든 태그들을 선택 */
+
+    #a {
+      color: blue;
+    }
+
+    p#a {
+      color: aqua;
+    }
+
+    /* p태그 중에서 아이디가 a인 태그를 선택 */
+  </style>
+</head>
+
+<body>
+  <h1 class="a">식별자코드(id,class의 이름)를 사용한 선택자 구성</h1>
+  <p>태그에 부여한 이름을 통해 선택문자를 구성할 수 있다.</p>
+  <p>태그명을 사용하여 선택자부분에 표현할 수 있다</p>
+  <p class="a">class는 접근문자(.)을 사용하여 선택자부분에만 표현할 수 있다</p>
+  <p id="a" class="b">id는 접근문자(#)을 사용하여 선택자부분에만 표현할 수 있다 - id는 중복사용 불가(단수)</p>
+  <!-- p{}
+    p#a{}
+    p.b{}
+    .b{}
+    #a{}
+    #a.b{}
+    .b#a{}
+    p#a.b{}
+    p.b#a{} -->
+  <p>태그의 별명(class명)는 여러개를 사용할 수 있으며 기존 속성값에서 띄어쓰기를 사용하여 클래스를 추가한다.</p>
+  <!-- <p class="b c d e"> -->
+  <p>선택자 부분에서 선택된 태그는 기본적으로 복수형태이다.</p>
+</body>
+
+</html>

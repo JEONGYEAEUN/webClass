@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영역구성태그</title>
+</head>
+
+<body>
+  <h1>영역구성태그-div</h1>
+  <p>영역을 나눌 때 사용하는 태그</p>
+  <p>컨텐츠의 맥락에 따라서 영역을 나눔 + 배치를 보고 영역을 나눔</p>
+  <p><b>영역구성태그는 자유롭게 사용할 수 있으나, 좌우로 뚜렷하게 나뉘어진 컨텐츠는 무조건 영역구성태그를 사용하여 나눈다.</b></p>
+
+  <p>영역을 나눌 때는 우선 전체를 영역으로 하나 잡아줘야 한다.</p>
+  <p>좌우로 나눠진 영역은 반드시 영역구성으로 나눠줘야한다.</p>
+  <p>홈페이지에서 메뉴단을 만들 때는 반드시 ul을 사용한다.</p>
+  <p>두개 이상의 메뉴가 구성될 때 쓰이는 영역구성 태그 > nav</p>
+  <p>이미지만 비디오만 들어가는 영역에 사용하는 태그 > figure (div="banner" 해도 상관없다)</p>
+  <p>전체메인을 구성하는 태그 > main </p>
+  <p>영역 안에 영역을 만들 때 사용해도 되는 영역 구성 > section</p>
+
+  <hr>
+  <h1>div로 부터 파생되어 나온 영역구성 태그들</h1>
+  <p>영역의 쓰임새에 따라 태그명을 새롭게 만듬</p>
+  <p>css에서 나누어진 영역단위로 배치를 할 수 있기 때문에 좌우로 나뉘어진 영역은 반드시 영역태그로 구성 되어야한다.</p>
+
+  <ul>
+    <li>header - 홈페이지의 머릿글 컨텐츠에 사용되는 영역태그(로고,메뉴)</li>
+    <li>footer - 홈페이지의 하단글 컨텐츠에 사용되는 영역태그(회사정보)</li>
+    <li>main - 가장 큰 영역의 태그, 홈페이지의 메인컨텐츠를 전반적으로 다룰 때 사용(main태그는 html파일당 1개만 사용 가능)</li>
+    <li>section/article - 구획을 나눌 때 사용, 차이 없다, 혼용X 통일해서 사용</li>
+    <li>nav - 홈페이지의 메뉴단을 만들 때 사용하는 영역태그</li>
+    <li>figure - 이미지나 영상의 전용태그</li>
+    <li>aside - 홈페이지의 독립된 사이드컨텐츠를 만들 때 사용하는 영역태그 (전체컨텐츠의 공간 안에 넣지않아도 된다. - 영역의 바깥에다 사용)</li>
+  </ul>
+
+
+
+
+  <div id="container">
+    <div id="header"></div>
+    <div id="aside"></div>
+    <div id="contents"></div>
+  </div>
+</body>
+
+</html>

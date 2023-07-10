@@ -1,0 +1,21 @@
+.boxa {
+  border: 10px solid red;
+  width: 500px;
+  box-sizing: content-box;
+}
+
+/* 총 가로사이즈는 520px이다 */
+
+/* 기본값: width/height를 지정하였을 때 안쪽의 컨텐츠가 입력되는 컨텐츠 박스의 크기를 변형한다 */
+
+h2 {
+  border: 1px solid blue;
+}
+
+.boxb {
+  border: 10px solid green;
+  width: 500px;
+  box-sizing: border-box;
+}
+
+/* 테두리까지 다합쳐서 500px, 컨텐츠박스는 480px */

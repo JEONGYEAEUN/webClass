@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+ul svg {
+  border: 5px solid yellowgreen;
+  /* width: 500px; */
+  transform: rotate(-90deg);
+}
+
+.a {
+  fill: plum;
+  /* 면색 */
+  fill-opacity: 0.5;
+  /* 면색의 투명도 */
+  stroke: purple;
+  /* 선 */
+  stroke-width: 2;
+  /*  선의 두께 */
+  stroke-dasharray: 314;
+  /* 선의 길이 */
+  stroke-dashoffset: 314;
+  /* 선의 좌표 */
+  transition: all 0.5s ease 0s;
+}
+
+.a:hover {
+  fill: plum;
+  fill-opacity: 1;
+  stroke: purple;
+  stroke-width: 3;
+  stroke-dashoffset: calc((1 - 0.6)*314);
+}
+
+.list {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.list>li {
+  flex: 1;
+}
+
+.line {
+  border: 1px solid red;
+}
+
+
+.cls-1 {
+  fill: none;
+  stroke: #2242ff;
+  stroke-miterlimit: 10;
+}
+
+.c1 {
+  fill: #fff;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  transition: all 0.5s ease 0s;
+  /* stroke-dasharray:10000 ;
+    stroke-dashoffset: 10000; */
+}
+
+.c1:hover {
+  stroke: lightseagreen;
+  stroke-width: 5;
+  stroke-dashoffset: 0 !important;
+}
+
+
+
+
+
+
+
+
+/* .sb {
+  width: 100%;
+  border: 1px solid red;
+} */
+
+/* .cls-1 {
+  fill: none;
+  stroke-miterlimit: 10;
+  stroke: url(#linear-gradient);
+  transition: all 1s ease 0s;
+}
+
+.cls-1:hover {
+  stroke-width: 10;
+  stroke-dashoffset: 0;
+} */
+
+/* .cls-1 {
+  fill: none;
+  stroke-miterlimit: 10;
+  stroke: black;
+  transition: all 5s ease 0s;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+
+}
+
+.cls-1:hover {
+  stroke: url(#linear-gradient);
+  stroke-width: 10;
+  stroke-dashoffset: 0;
+} */

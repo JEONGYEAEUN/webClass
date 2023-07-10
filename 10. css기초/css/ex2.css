@@ -1,0 +1,16 @@
+.container>h2 {
+  font-size: 40px;
+}
+
+.container p {
+  color: blue;
+}
+
+.container {
+  font-size: 25px;
+  color: green;
+}
+
+.line {
+  text-decoration: underline;
+}
